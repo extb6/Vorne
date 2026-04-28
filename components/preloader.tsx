@@ -93,7 +93,7 @@ export function Preloader() {
         }
       `}</style>
 
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center gap-6">
         {/* Rotating ring with gradient */}
         <div className="relative w-32 h-32">
           <div className="preloader-glow absolute inset-0 rounded-full border-4 border-transparent border-t-primary border-r-accent" />
@@ -108,28 +108,6 @@ export function Preloader() {
             />
           </div>
         </div>
-
-        {/* Text with dots animation */}
-        <div className="flex flex-col items-center gap-4">
-          <h2 className="text-xl font-semibold text-foreground">
-            Loading
-            <span className="preloader-dot inline-block mx-1">.</span>
-            <span className="preloader-dot inline-block mx-1">.</span>
-            <span className="preloader-dot inline-block mx-1">.</span>
-          </h2>
-          
-          {/* Progress bar */}
-          <div className="w-48 h-1 bg-muted rounded-full overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-primary via-accent to-primary rounded-full"
-              style={{
-                animation: 'moveProgress 2s ease-in-out infinite',
-              }}
-            />
-          </div>
-        </div>
-
-        {/* Loading text */}
-        <p className="text-sm text-muted-foreground">Initializing VornexChain</p>
       </div>
 
       <style>{`

@@ -39,16 +39,16 @@ export function Header() {
   ]
 
   const companyItems = [
-    { label: "About Us", href: "/company/about" },
-    { label: "License & Regulation", href: "/company/license" },
-    { label: "Privacy Policy", href: "/company/privacy" },
-    { label: "Contact", href: "/company/contact" },
+    { label: "About Us", href: "https://app.vornexchain.com/about" },
+    { label: "License & Regulation", href: "https://app.vornexchain.com/license" },
+    { label: "Privacy Policy", href: "https://app.vornexchain.com/privacy-policy" },
+    { label: "Contact", href: "https://app.vornexchain.com/contact" },
   ]
 
   const tradingItems = [
-    { label: "Futures Trading", href: "/futures-trading" },
-    { label: "Margin Trading", href: "/margin-trading" },
-    { label: "Forex Trading", href: "/forex-trading" },
+    { label: "Futures Trading", href: "https://app.vornexchain.com/trading/futures" },
+    { label: "Margin Trading", href: "https://app.vornexchain.com/trading/margin" },
+    { label: "Forex Trading", href: "https://app.vornexchain.com/trading/forex" },
   ]
 
   return (
