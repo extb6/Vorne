@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { XchainSection } from "@/components/xchain-section"
 import { FuturesSection } from "@/components/futures-section"
 import { InvestmentPlans } from "@/components/investment-plans"
+import { InvestmentCalculator } from "@/components/investment-calculator"
 import { TradingSection } from "@/components/trading-section"
 import { FeaturesSection } from "@/components/features-section"
 import { Footer } from "@/components/footer"
@@ -16,6 +17,7 @@ export default function Home() {
       <XchainSection />
       <FuturesSection />
       <InvestmentPlans />
+      <InvestmentCalculator />
       <TradingSection />
       <FeaturesSection />
       <Footer />
