@@ -14,27 +14,27 @@ export function Header() {
       category: "Sectors",
       items: [
         { label: "Stocks & ETFs", href: "https://app.vornexchain.com/sectors/stocks-etfs" },
-        { label: "Crypto Assets", href: "/trade-sectors/crypto" },
-        { label: "Real Estate", href: "/trade-sectors/real-estate" },
-        { label: "Fixed Income", href: "/trade-sectors/bonds" },
-        { label: "Commodities", href: "/trade-sectors/commodities" },
-        { label: "Business & Startups", href: "/trade-sectors/startups" },
-        { label: "Arts & Collectibles", href: "/trade-sectors/collectibles" },
-        { label: "Gaming & Esports", href: "/trade-sectors/gaming" },
-        { label: "Cash & Savings", href: "/trade-sectors/savings" },
+        { label: "Crypto Assets", href: "https://app.vornexchain.com/sectors/crypto-assets" },
+        { label: "Real Estate", href: "https://app.vornexchain.com/sectors/real-estate" },
+        { label: "Fixed Income", href: "https://app.vornexchain.com/sectors/fixed-income" },
+        { label: "Commodities", href: "https://app.vornexchain.com/sectors/commodities" },
+        { label: "Business & Startups", href: "https://app.vornexchain.com/sectors/businesses-startups" },
+        { label: "Arts & Collectibles", href: "https://app.vornexchain.com/sectors/art-collectibles" },
+        { label: "Gaming & Esports", href: "https://app.vornexchain.com/sectors/gaming-esports" },
+        { label: "Cash & Savings", href: "https://app.vornexchain.com/sectors/cash-savings" },
       ],
     },
     {
       category: "Capital Instruments",
       items: [
-        { label: "Stocks", href: "/instruments/stocks" },
-        { label: "Bonds", href: "/instruments/bonds" },
-        { label: "ETFs", href: "/instruments/etfs" },
+        { label: "Stocks", href: "https://app.vornexchain.com/capital-instruments/stocks" },
+        { label: "Bonds", href: "https://app.vornexchain.com/capital-instruments/bonds" },
+        { label: "ETFs", href: "https://app.vornexchain.com/capital-instruments/etfs" },
       ],
     },
     {
       category: "Managed Portfolios",
-      items: [{ label: "Investment Plans", href: "/portfolios/plans" }],
+      items: [{ label: "Investment Plans", href: "https://app.vornexchain.com/investment-plans" }],
     },
   ]
 
@@ -162,7 +162,10 @@ export function Header() {
                             <li key={typeof item === 'string' ? item : item.label}>
                               <a
                                 href={typeof item === 'string' ? '#' : item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-4 py-2 text-muted-foreground hover:text-foreground transition-colors text-sm block"
+                                onClick={() => setMobileMenuOpen(false)}
                               >
                                 {typeof item === 'string' ? item : item.label}
                               </a>
