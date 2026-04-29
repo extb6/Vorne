@@ -103,10 +103,10 @@ export function Header() {
 
         {/* Desktop Button */}
         <div className="hidden md:flex gap-4">
-          <a href="/login">
-            <Button variant="outline">Login</Button>
+          <a href="https://app.vornexchain.com/login" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">Sign In</Button>
           </a>
-          <a href="/open-account">
+          <a href="https://app.vornexchain.com/register" target="_blank" rel="noopener noreferrer">
             <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90">
               Open Account
             </Button>
@@ -222,15 +222,14 @@ export function Header() {
                 )}
               </div>
 
-              {/* Login Section */}
+              {/* Auth Section */}
               <div className="mt-8 pt-6 border-t border-border space-y-3">
-                <p className="px-4 text-foreground font-semibold text-center">Login</p>
-                <a href="/login" className="block">
+                <a href="https://app.vornexchain.com/login" target="_blank" rel="noopener noreferrer" className="block">
                   <Button variant="outline" className="w-full">
                     Sign In
                   </Button>
                 </a>
-                <a href="/open-account" className="block">
+                <a href="https://app.vornexchain.com/register" target="_blank" rel="noopener noreferrer" className="block">
                   <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-semibold py-3">
                     Open Account
                   </Button>
