@@ -164,6 +164,8 @@ export function Header() {
                 <a
                   key={item.label}
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-3 text-foreground hover:bg-secondary/50 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -192,6 +194,8 @@ export function Header() {
                       <a
                         key={item.label}
                         href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-4 py-2 text-muted-foreground hover:text-foreground transition-colors text-sm block"
                         onClick={() => setMobileMenuOpen(false)}
                       >
