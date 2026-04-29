@@ -14,13 +14,6 @@ const documents = [
     pdfUrl: "/documents/financial-license.pdf",
   },
   {
-    id: 2,
-    title: "AML/KYC Policy",
-    description: "Anti-Money Laundering and Know Your Customer compliance documentation",
-    icon: Shield,
-    pdfUrl: "/documents/aml-kyc-policy.pdf",
-  },
-  {
     id: 3,
     title: "Terms of Service",
     description: "Complete terms and conditions for platform usage",
