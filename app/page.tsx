@@ -10,7 +10,6 @@ import { TradingSection } from "@/components/trading-section"
 import { FeaturesSection } from "@/components/features-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { Footer } from "@/components/footer"
-import { ChatWidget } from "@/components/chat-widget"
 import { CookieConsent } from "@/components/cookie-consent"
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
       <FeaturesSection />
       <TestimonialsSection />
       <Footer />
-      <ChatWidget />
       <CookieConsent />
     </main>
   )
