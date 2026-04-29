@@ -81,12 +81,7 @@ export function FuturesSection() {
               ))}
             </div>
 
-            <AnimatedSection animation="fade-up" delay={600}>
-              <Button className="w-full sm:w-auto bg-gradient-to-r from-primary to-pink-500 hover:from-primary/90 hover:to-pink-500/90 text-white px-6 md:px-8 py-5 md:py-6 rounded-xl">
-                <TrendingUp className="w-5 h-5 mr-2" />
-                Start Trading Futures
-              </Button>
-            </AnimatedSection>
+
           </div>
 
           {/* Visual */}

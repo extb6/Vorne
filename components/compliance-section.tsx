@@ -8,20 +8,37 @@ import { AnimatedSection } from "./animated-section"
 const documents = [
   {
     id: 1,
-    title: "Financial Services License",
-    description: "Official license to operate as a regulated financial services provider",
+    title: "Broker-Dealer Registration",
+    description: "Official Fintech registration certificate as a Broker-Dealer",
     icon: Award,
     pdfUrl: "/documents/financial-license.pdf",
+    imageUrl: "/certificates/broker-dealer-certificate.jpg",
+  },
+  {
+    id: 2,
+    title: "Money Transmitter License",
+    description: "Licensed Money Transmitter certification for financial transactions",
+    icon: Award,
+    pdfUrl: "/documents/financial-license.pdf",
+    imageUrl: "/certificates/money-transmitter-certificate.jpg",
   },
   {
     id: 3,
+    title: "Investment Adviser (RIA)",
+    description: "Registered Investment Adviser certification for portfolio management",
+    icon: Award,
+    pdfUrl: "/documents/financial-license.pdf",
+    imageUrl: "/certificates/ria-certificate.jpg",
+  },
+  {
+    id: 4,
     title: "Terms of Service",
     description: "Complete terms and conditions for platform usage",
     icon: FileText,
     pdfUrl: "/documents/terms-of-service.pdf",
   },
   {
-    id: 4,
+    id: 5,
     title: "Privacy Policy",
     description: "Data protection and privacy compliance documentation",
     icon: FileText,
@@ -132,10 +149,10 @@ export function ComplianceSection() {
         </AnimatedSection>
       </div>
 
-      {/* PDF Viewer Modal */}
+      {/* Document Viewer Modal */}
       {selectedDoc && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
-          <div className="relative w-full max-w-4xl h-[80vh] bg-card rounded-2xl border border-border overflow-hidden animate-in fade-in zoom-in-95 duration-300">
+          <div className="relative w-full max-w-4xl max-h-[90vh] bg-card rounded-2xl border border-border overflow-hidden animate-in fade-in zoom-in-95 duration-300">
             {/* Modal Header */}
             <div className="flex items-center justify-between p-3 md:p-4 border-b border-border">
               <div className="flex items-center gap-2 md:gap-3">
@@ -161,9 +178,19 @@ export function ComplianceSection() {
                 </button>
               </div>
             </div>
-            {/* PDF Embed */}
-            <div className="h-[calc(100%-52px)] md:h-[calc(100%-60px)] bg-secondary/20">
-              <iframe src={selectedDoc.pdfUrl} className="w-full h-full" title={selectedDoc.title} />
+            {/* Content */}
+            <div className="h-[calc(100%-52px)] md:h-[calc(100%-60px)] bg-secondary/20 overflow-y-auto">
+              {selectedDoc.imageUrl ? (
+                <div className="w-full h-full flex items-center justify-center p-4">
+                  <img 
+                    src={selectedDoc.imageUrl} 
+                    alt={selectedDoc.title}
+                    className="max-w-full max-h-full object-contain rounded-lg"
+                  />
+                </div>
+              ) : (
+                <iframe src={selectedDoc.pdfUrl} className="w-full h-full" title={selectedDoc.title} />
+              )}
             </div>
           </div>
         </div>

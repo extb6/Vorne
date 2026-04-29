@@ -32,10 +32,6 @@ export function Header() {
         { label: "ETFs", href: "/instruments/etfs" },
       ],
     },
-    {
-      category: "Managed Portfolios",
-      items: [{ label: "Investment Plans", href: "/portfolios/plans" }],
-    },
   ]
 
   const companyItems = [

@@ -174,38 +174,7 @@ export function VirtualTradingSection() {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <a
-                  href="https://app.vornexchain.com/user/trading/futures"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full sm:w-auto"
-                >
-                  <Button
-                    size="lg"
-                    className="w-full sm:w-auto px-6 md:px-8 py-5 md:py-6 text-sm md:text-lg bg-gradient-to-r from-primary to-purple-400 hover:from-primary/90 hover:to-purple-400/90 text-primary-foreground rounded-xl"
-                  >
-                    Start Trading Futures
-                    <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-                  </Button>
-                </a>
-                <a
-                  href="https://app.vornexchain.com/user/trading/futures"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full sm:w-auto"
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="w-full sm:w-auto px-6 md:px-8 py-5 md:py-6 text-sm md:text-lg border-accent/50 text-accent hover:bg-accent/10 rounded-xl"
-                  >
-                    Trade Forex
-                    <Globe className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-                  </Button>
-                </a>
-              </div>
+
             </div>
           </div>
         </AnimatedSection>
